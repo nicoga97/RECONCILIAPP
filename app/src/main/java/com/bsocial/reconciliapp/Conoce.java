@@ -6,17 +6,18 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class WelcomePage extends AppCompatActivity {
+import com.bsocial.reconciliapp.ui.login.LoginActivity;
+
+public class Conoce extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_create_account_page);
+        setContentView(R.layout.activity_conoce);
     }
 
-    public void sendMainPage(View view) {
-        Intent intent = new Intent(this, MainPage.class);
+    public void sendRegister(View view) {
+        Intent intent = new Intent(this, WelcomePage.class);
         startActivity(intent);
     }
-
 }

@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/primaryColor"
+    android:clickable="false"
     tools:context=".WelcomePage">
 
     <TextView
@@ -233,12 +234,13 @@
 
     <Button
         android:id="@+id/siguienteButton"
-        android:layout_width="0dp"
-        android:layout_height="42dp"
+        android:layout_width="145dp"
+        android:layout_height="43dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="228dp"
         android:layout_marginEnd="250dp"
         android:backgroundTint="@color/secondaryColor"
+        android:onClick="sendMainPage"
         android:shadowColor="#070707"
         android:text="SIGUIENTE"
         android:textColor="#000000"
@@ -251,6 +253,8 @@
         android:id="@+id/politicasCheck"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:checked="true"
+        android:clickable="false"
         android:text="TENEMOS PÓLITICAS DE DATOS"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.181"

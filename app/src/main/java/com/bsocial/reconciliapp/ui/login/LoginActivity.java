@@ -1,39 +1,25 @@
 package com.bsocial.reconciliapp.ui.login;
 
-import android.app.Activity;
-
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.widget.AppCompatEditText;
-import androidx.lifecycle.Observer;
-import androidx.lifecycle.ViewModelProvider;
 
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 
-import androidx.annotation.Nullable;
-import androidx.annotation.StringRes;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.text.Editable;
 import android.text.TextUtils;
-import android.text.TextWatcher;
 import android.util.Log;
 import android.util.Patterns;
-import android.view.KeyEvent;
 import android.view.View;
-import android.view.inputmethod.EditorInfo;
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.ProgressBar;
-import android.widget.TextView;
-import android.widget.Toast;
 
+import com.bsocial.reconciliapp.Conoce;
+import com.bsocial.reconciliapp.MainPage;
 import com.bsocial.reconciliapp.R;
-import com.bsocial.reconciliapp.ui.login.LoginViewModel;
-import com.bsocial.reconciliapp.ui.login.LoginViewModelFactory;
+import com.bsocial.reconciliapp.WelcomePage;
 import com.google.android.material.snackbar.Snackbar;
-import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 
 public class LoginActivity extends AppCompatActivity {
@@ -124,7 +110,12 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void createAccount(View v){
-        //Intent intent = new Intent(this, CreateAccountActivity.class);
-        //startActivity(intent);
+        Intent intent = new Intent(this, WelcomePage.class);
+        startActivity(intent);
+    }
+
+    public void knowApp(View v){
+        Intent intent = new Intent(this, Conoce.class);
+        startActivity(intent);
     }
 }

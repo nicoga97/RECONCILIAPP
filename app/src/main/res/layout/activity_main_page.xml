@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primaryColor"
+    tools:context=".MainPage">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/app_name_upper_case"
+        android:textColor="#000000"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageButtonAllies"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="52dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:srcCompat="@mipmap/aliado" />
+
+    <ImageView
+        android:id="@+id/imageButtonBank"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="84dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonRoute"
+        app:srcCompat="@mipmap/banco" />
+
+    <ImageView
+        android:id="@+id/imageButtonShop"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginBottom="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@mipmap/emprendimiento" />
+
+    <ImageView
+        android:id="@+id/imageButtonMeeting"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="52dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonAllies"
+        app:srcCompat="@mipmap/encuentro" />
+
+    <ImageView
+        android:id="@+id/imageButtonRoute"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="64dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:srcCompat="@mipmap/ruta" />
+
+    <TextView
+        android:id="@+id/textViewRoute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="12dp"
+        android:text="RUTAS DE ATENCIÓN"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonRoute" />
+
+    <TextView
+        android:id="@+id/textViewAllies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="84dp"
+        android:text="ALIADOS"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonAllies" />
+
+    <TextView
+        android:id="@+id/textViewBank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="20dp"
+        android:text="BANCO DE MEMORIAS"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonBank" />
+
+    <TextView
+        android:id="@+id/textViewMeeting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="72dp"
+        android:text="ENCUENTROS"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonMeeting" />
+
+    <TextView
+        android:id="@+id/textViewShop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:layout_marginBottom="24dp"
+        android:text="EMPRENDIMIENTOS"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonShop" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
