@@ -13,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="44dp"
-        android:text="REGISTRATE PARA EMPEZAR..."
+        android:text="@string/registrate_para_empezar"
         android:textColor="#000000"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -26,7 +26,6 @@
         android:id="@+id/personNameText"
         android:layout_width="162dp"
         android:layout_height="41dp"
-        android:layout_marginTop="68dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:textColor="#FFFFFF"
@@ -35,17 +34,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.124"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintTop_toBottomOf="@+id/nombreText"
+        android:autofillHints="" />
 
     <CheckBox
         android:id="@+id/Masculino"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
         android:layout_marginTop="64dp"
         android:rotationY="178"
         android:text="M"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.134"
         app:layout_constraintStart_toEndOf="@+id/personNameText"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
@@ -55,8 +54,6 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="64dp"
         android:text="F"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.767"
         app:layout_constraintStart_toEndOf="@+id/Masculino"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
@@ -64,24 +61,22 @@
         android:id="@+id/sexo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
         android:text="SEXO"
         app:layout_constraintBottom_toTopOf="@+id/Masculino"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.151"
-        app:layout_constraintStart_toEndOf="@+id/Masculino"
+        app:layout_constraintHorizontal_bias="0.317"
+        app:layout_constraintStart_toEndOf="@+id/personNameText"
         app:layout_constraintTop_toBottomOf="@+id/textView3"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.978" />
 
     <CheckBox
         android:id="@+id/otros"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
         android:rotationY="0"
         android:text="OTROS"
-        app:layout_constraintEnd_toStartOf="@+id/checkBox2"
-        app:layout_constraintHorizontal_bias="0.173"
-        app:layout_constraintStart_toEndOf="@+id/Masculino"
+        app:layout_constraintStart_toEndOf="@+id/checkBox2"
         app:layout_constraintTop_toBottomOf="@+id/sexo" />
 
     <Spinner
