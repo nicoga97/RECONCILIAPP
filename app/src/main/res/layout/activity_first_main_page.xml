@@ -5,9 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/primaryColor"
-    tools:context=".MainPage">
+    tools:context=".FirstMainPage">
 
-    <TextView
+<TextView
         android:id="@+id/titleMainPage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -21,27 +21,47 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageButtonAllies"
+        android:id="@+id/imageViewProfile"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="64dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleMainPage"
+        app:srcCompat="@mipmap/perfile" />
+
+    <ImageView
+        android:id="@+id/imageViewOffers"
         android:layout_width="130dp"
         android:layout_height="130dp"
         android:layout_marginTop="64dp"
         android:layout_marginEnd="52dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/titleMainPage"
-        app:srcCompat="@mipmap/aliado" />
+        app:srcCompat="@mipmap/oferta" />
 
     <ImageView
-        android:id="@+id/imageButtonBank"
+        android:id="@+id/imageViewKinderGarden"
         android:layout_width="130dp"
         android:layout_height="130dp"
         android:layout_marginStart="52dp"
         android:layout_marginTop="84dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButtonRoute"
-        app:srcCompat="@mipmap/banco" />
+        app:layout_constraintTop_toBottomOf="@+id/imageViewProfile"
+        app:srcCompat="@mipmap/guarderia" />
 
     <ImageView
-        android:id="@+id/imageButtonShop"
+        android:id="@+id/imageViewProgram"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="52dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewOffers"
+        app:srcCompat="@mipmap/programa" />
+
+    <ImageView
+        android:id="@+id/imageButtonBank"
         android:layout_width="130dp"
         android:layout_height="130dp"
         android:layout_marginBottom="60dp"
@@ -49,69 +69,38 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@mipmap/emprendimiento" />
+        app:srcCompat="@mipmap/banco" />
 
-    <ImageView
-        android:id="@+id/imageButtonMeeting"
-        android:layout_width="130dp"
-        android:layout_height="130dp"
-        android:layout_marginTop="84dp"
-        android:layout_marginEnd="52dp"
-        android:clickable="true"
-        android:onClick="sendEncuentros"
+    <TextView
+        android:id="@+id/textViewOffer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:text="OFERTAS LABORALES"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButtonAllies"
-        app:srcCompat="@mipmap/encuentro" />
-
-    <ImageView
-        android:id="@+id/imageButtonRoute"
-        android:layout_width="130dp"
-        android:layout_height="130dp"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="64dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/titleMainPage"
-        app:srcCompat="@mipmap/ruta" />
+        app:layout_constraintTop_toBottomOf="@+id/imageViewOffers" />
 
     <TextView
-        android:id="@+id/textViewRoute"
+        android:id="@+id/textViewKinder"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="52dp"
+        android:layout_marginStart="72dp"
         android:layout_marginTop="20dp"
-        android:text="RUTAS DE ATENCIÓN"
+        android:text="GUARDERÍAS"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButtonRoute" />
+        app:layout_constraintTop_toBottomOf="@+id/imageViewKinderGarden" />
 
     <TextView
-        android:id="@+id/textViewAllies"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="84dp"
-        android:text="ALIADOS"
+        android:id="@+id/textViewProgram"
+        android:layout_width="173dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="25dp"
+        android:gravity="center"
+        android:text="PROGRAMAS DESPLAZADOS DISTRITOS"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButtonAllies" />
-
-    <TextView
-        android:id="@+id/textViewBank"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="20dp"
-        android:text="BANCO DE MEMORIAS"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButtonBank" />
-
-    <TextView
-        android:id="@+id/textViewMeeting"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="72dp"
-        android:text="ENCUENTROS"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButtonMeeting" />
+        app:layout_constraintTop_toBottomOf="@+id/imageViewProgram" />
 
     <TextView
         android:id="@+id/textViewHistories"
@@ -119,12 +108,22 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:layout_marginBottom="24dp"
-        android:text="EMPRENDIMIENTOS"
+        android:text="CONOCE MÁS HISTORIAS"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButtonShop" />
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonBank" />
+
+    <TextView
+        android:id="@+id/textViewProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="20dp"
+        android:text="PERFIL"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewProfile" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

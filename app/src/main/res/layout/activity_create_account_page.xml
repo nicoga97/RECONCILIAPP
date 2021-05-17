@@ -28,62 +28,30 @@
         android:layout_height="41dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:textColor="#FFFFFF"
-        android:textColorHighlight="#FFFFFF"
-        android:textColorHint="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.124"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/nombreText"
         android:autofillHints="" />
 
-    <CheckBox
-        android:id="@+id/Masculino"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="64dp"
-        android:rotationY="178"
-        android:text="M"
-        app:layout_constraintStart_toEndOf="@+id/personNameText"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
-
-    <CheckBox
-        android:id="@+id/checkBox2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
-        android:text="F"
-        app:layout_constraintStart_toEndOf="@+id/Masculino"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <TextView
         android:id="@+id/sexo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
+        android:layout_marginTop="36dp"
         android:text="SEXO"
-        app:layout_constraintBottom_toTopOf="@+id/Masculino"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.317"
+        app:layout_constraintHorizontal_bias="0.324"
         app:layout_constraintStart_toEndOf="@+id/personNameText"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
-        app:layout_constraintVertical_bias="0.978" />
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
-    <CheckBox
-        android:id="@+id/otros"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:rotationY="0"
-        android:text="OTROS"
-        app:layout_constraintStart_toEndOf="@+id/checkBox2"
-        app:layout_constraintTop_toBottomOf="@+id/sexo" />
-
-    <Spinner
+    <EditText
         android:id="@+id/registroSelect"
-        android:layout_width="177dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="159dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="12dp"
         android:outlineProvider="paddedBounds"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.128"
@@ -104,23 +72,23 @@
         android:id="@+id/registro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="116dp"
         android:text="NUMERO DE REGISTRO"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.147"
+        app:layout_constraintHorizontal_bias="0.14"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/otros" />
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <TextView
         android:id="@+id/ciudadOrigen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="116dp"
         android:text="CIUDAD DE ORIGEN"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.436"
+        app:layout_constraintHorizontal_bias="0.431"
         app:layout_constraintStart_toEndOf="@+id/registro"
-        app:layout_constraintTop_toBottomOf="@+id/otros" />
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <TextView
         android:id="@+id/hijosText"
@@ -133,33 +101,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/registroSelect" />
 
-    <CheckBox
-        android:id="@+id/yesCheck"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:text="SI"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.082"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/hijosText" />
-
-    <CheckBox
-        android:id="@+id/noCheck"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:text="NO"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.202"
-        app:layout_constraintStart_toEndOf="@+id/yesCheck"
-        app:layout_constraintTop_toBottomOf="@+id/hijosText" />
-
     <EditText
         android:id="@+id/cuantosText"
         android:layout_width="78dp"
         android:layout_height="49dp"
-        android:layout_marginTop="260dp"
+        android:layout_marginTop="248dp"
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
@@ -171,12 +117,12 @@
         android:id="@+id/cuantosPlainText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="28dp"
         android:text="CUANTOS: "
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.114"
+        app:layout_constraintHorizontal_bias="0.111"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/yesCheck" />
+        app:layout_constraintTop_toTopOf="@+id/cuantosText" />
 
     <TextView
         android:id="@+id/nombreText"
@@ -260,12 +206,61 @@
         android:id="@+id/fotoTextView"
         android:layout_width="131dp"
         android:layout_height="65dp"
-        android:layout_marginTop="192dp"
+        android:layout_marginTop="196dp"
         android:text="SUBE UNA FOTO O CREA TU AVATAR"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.821"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.635"
+        app:layout_constraintStart_toEndOf="@+id/hijosText"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="180dp"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/personNameText"
+        app:layout_constraintTop_toBottomOf="@+id/sexo">
+
+        <RadioButton
+            android:id="@+id/male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="M" />
+
+        <RadioButton
+            android:id="@+id/female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="F" />
+
+        <RadioButton
+            android:id="@+id/other"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OTROS" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="103dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="40dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hijosText">
+
+        <RadioButton
+            android:id="@+id/yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SI" />
+
+        <RadioButton
+            android:id="@+id/no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NO" />
+    </RadioGroup>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
