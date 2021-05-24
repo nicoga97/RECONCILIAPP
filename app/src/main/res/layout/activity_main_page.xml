@@ -26,6 +26,7 @@
         android:layout_height="130dp"
         android:layout_marginTop="64dp"
         android:layout_marginEnd="52dp"
+        android:onClick="sendToAliados"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/titleMainPage"
         app:srcCompat="@mipmap/aliado" />
@@ -36,6 +37,7 @@
         android:layout_height="130dp"
         android:layout_marginStart="52dp"
         android:layout_marginTop="84dp"
+        android:onClick="sendToBanco"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageButtonRoute"
         app:srcCompat="@mipmap/banco" />
@@ -69,6 +71,7 @@
         android:layout_height="130dp"
         android:layout_marginStart="52dp"
         android:layout_marginTop="64dp"
+        android:onClick="sendToRutaDeAtencion"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/titleMainPage"
         app:srcCompat="@mipmap/ruta" />

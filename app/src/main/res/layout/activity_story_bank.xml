@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primaryColor"
+    tools:context=".StoryBankActivity">
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="271dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/bancostory" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="115dp"
+        android:layout_height="94dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="44dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/captura" />
+
+    <TextView
+        android:id="@+id/textViewPar1"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="En Reconciliapp creemos en la importancia de la verdad y la memoria histórica de los colombianos para la construcción de una paz estable y duradera. "
+        android:textSize="18sp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView13" />
+
+    <TextView
+        android:id="@+id/textViewPar2"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Por eso aquí podrás compartir y leer siempre respetuosamente las historias de vida y experiencias de personas que vivieron las consecuencias del conflicto amado. "
+        android:textSize="18sp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPar1" />
+
+    <TextView
+        android:id="@+id/textViewPar3"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text='Entendemos que "Un pueblo que no conoce su historia esta condenado a repetirla" por eso esperamos que conociendo un poco mas de nuestra historia logremos que ningún colombiano tenga que sufrir las consecuencias de una guerra nunca mas.'
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPar2" />
+
+    <Button
+        android:id="@+id/siguienteButton"
+        android:layout_width="200dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="@color/secondaryColor"
+        android:shadowColor="#070707"
+        android:text="LEE UNA HISTORIA"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

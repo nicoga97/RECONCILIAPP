@@ -18,4 +18,19 @@ public class MainPage extends AppCompatActivity {
         Intent intent = new Intent(this, Encuentros.class);
         startActivity(intent);
     }
+
+    public void sendToRutaDeAtencion(View view) {
+        Intent intent = new Intent(this, AttentionActivity.class);
+        startActivity(intent);
+    }
+
+    public void sendToAliados(View view) {
+        Intent intent = new Intent(this, AlliesActivity.class);
+        startActivity(intent);
+    }
+
+    public void sendToBanco(View view) {
+        Intent intent = new Intent(this, StoryBankActivity.class);
+        startActivity(intent);
+    }
 }
