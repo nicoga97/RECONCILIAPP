@@ -70,6 +70,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginBottom="30dp"
         android:backgroundTint="@color/secondaryColor"
+        android:onClick="sendToMyStory"
         android:shadowColor="#070707"
         android:text="LEE UNA HISTORIA"
         android:textColor="#000000"
