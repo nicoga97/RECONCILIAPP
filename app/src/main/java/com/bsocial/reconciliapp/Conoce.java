@@ -16,8 +16,8 @@ public class Conoce extends AppCompatActivity {
         setContentView(R.layout.activity_conoce);
     }
 
-    public void sendRegister(View view) {
-        Intent intent = new Intent(this, WelcomePage.class);
+    public void sendMainPage(View view) {
+        Intent intent = new Intent(this, MainPage.class);
         startActivity(intent);
     }
 }

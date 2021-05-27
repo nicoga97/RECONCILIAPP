@@ -16,6 +16,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.bsocial.reconciliapp.Conoce;
+import com.bsocial.reconciliapp.FirstMainPage;
 import com.bsocial.reconciliapp.MainPage;
 import com.bsocial.reconciliapp.R;
 import com.bsocial.reconciliapp.WelcomePage;
@@ -82,11 +83,11 @@ public class LoginActivity extends AppCompatActivity {
         }
     }
 
-    //private void switchToMainView() {
-       // Intent intent = new Intent(this, MainActivity.class);
-        //startActivity(intent);
-        //finish();
-    //}
+    private void switchToMainView() {
+       Intent intent = new Intent(this, FirstMainPage.class);
+        startActivity(intent);
+        finish();
+    }
 
     private void signIn(String email, String password) {
         Log.d(TAG, "signIn:" + email);
@@ -107,6 +108,7 @@ public class LoginActivity extends AppCompatActivity {
         signIn(textInputEmail.getEditText().getText().toString(), textInputPassword.getEditText().getText().toString());
         buttonLogin.setEnabled(true);
         v.setEnabled(true);
+        switchToMainView();
     }
 
     public void createAccount(View v){

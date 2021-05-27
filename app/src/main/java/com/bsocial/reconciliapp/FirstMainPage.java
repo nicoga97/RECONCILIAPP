@@ -19,8 +19,18 @@ public class FirstMainPage extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void sendToUniversityMatch(View view) {
+        Intent intent = new Intent(this, UniversityMatchActivity.class);
+        startActivity(intent);
+    }
+
+    public void sendToWorkMatch(View view) {
+        Intent intent = new Intent(this, WorkMatchActivity.class);
+        startActivity(intent);
+    }
+
     public void sendToBanco(View view) {
-        Intent intent = new Intent(this, StoryBankActivity.class);
+        Intent intent = new Intent(this, StoryActivity.class);
         startActivity(intent);
     }
 }

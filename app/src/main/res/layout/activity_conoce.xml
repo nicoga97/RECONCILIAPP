@@ -60,8 +60,8 @@
         android:layout_marginEnd="56dp"
         android:layout_marginBottom="16dp"
         android:backgroundTint="@color/secondaryColor"
-        android:onClick="sendRegister"
-        android:text="Registrate"
+        android:onClick="sendMainPage"
+        android:text="QUIERO SABER MAS"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

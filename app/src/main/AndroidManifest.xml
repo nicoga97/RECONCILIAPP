@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Reconciliapp">
-        <activity android:name=".StoryActivity"></activity>
+        <activity android:name=".WorkMatchActivity"></activity>
+        <activity android:name=".UniversityMatchActivity" />
+        <activity android:name=".StoryNavigationActivity" />
+        <activity android:name=".StoryActivity" />
         <activity android:name=".StoryBankActivity" />
         <activity android:name=".ProfileActivity" />
         <activity android:name=".AlliesActivity" />

@@ -30,7 +30,7 @@ public class MainPage extends AppCompatActivity {
     }
 
     public void sendToBanco(View view) {
-        Intent intent = new Intent(this, StoryBankActivity.class);
+        Intent intent = new Intent(this, StoryNavigationActivity.class);
         startActivity(intent);
     }
 }

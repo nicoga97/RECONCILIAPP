@@ -37,6 +37,7 @@
         android:layout_height="130dp"
         android:layout_marginTop="64dp"
         android:layout_marginEnd="52dp"
+        android:onClick="sendToWorkMatch"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/titleMainPage"
         app:srcCompat="@mipmap/oferta" />
@@ -57,6 +58,7 @@
         android:layout_height="130dp"
         android:layout_marginTop="84dp"
         android:layout_marginEnd="52dp"
+        android:onClick="sendToUniversityMatch"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageViewOffers"
         app:srcCompat="@mipmap/programa" />
